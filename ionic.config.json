@@ -1,0 +1,8 @@
+{
+  "name": "keyValueStorage",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
