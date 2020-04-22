@@ -9,6 +9,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
   import { IonicStorageModule } from '@ionic/storage';
+
+  import {FileOpener} from '@ionic-native/file-opener/ngx';
+  import {FileTransfer} from '@ionic-native/file-transfer/ngx';
+  import {File} from '@ionic-native/file/ngx';
+  // import {DocumentViewer} from '@ionic-native/document-viewer/ngx';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -23,6 +28,10 @@ import { AppComponent } from './app.component';
   providers: [
     StatusBar,
     SplashScreen,
+    FileOpener,
+    FileTransfer,
+    File,
+   // DocumentViewer,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
